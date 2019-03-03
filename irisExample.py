@@ -1,6 +1,9 @@
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn import tree
+from sklearn.externals.six import StringIO
+import pydotplus as pydot
+
 
 iris = load_iris()
 test_index = [0, 50, 100]
@@ -21,15 +24,15 @@ test_target
 print(clf.predict(test_data))
 
 
-import graphviz 
-dot_data = tree.export_graphviz(clf, out_file=None) 
-graph = graphviz.Source(dot_data) 
-graph.render("iris")
+# Visualization of decision tree
+dot_data = StringIO()
 
-dot_data = tree.export_graphviz(clf, out_file=None, 
-                     feature_names=iris.feature_names,  
-                     class_names=iris.target_names,  
-                     filled=True, rounded=True,  
-                     special_characters=True)  
-graph = graphviz.Source(dot_data)  
-graph 
+tree.export_graphviz(clf, 
+	out_file = dot_data,
+	feature_names = iris.feature_names,
+	class_names = iris.target_names,
+	filled = True, rounded = True,
+	impurity = False)
+
+graph = pydot.graph_from_dot_data(dot_data.getvalue())
+graph.write_pdf("iris.pdf")
