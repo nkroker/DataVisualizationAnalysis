@@ -3,6 +3,7 @@ from sklearn.datasets import load_iris
 from sklearn import tree
 from sklearn.externals.six import StringIO
 import pydotplus as pydot
+from IPython.display import Image
 
 
 iris = load_iris()
