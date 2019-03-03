@@ -1,5 +1,5 @@
 # machine learning beginner
-This is my machine learning tutorial directory which I use for educational purpose
+This is my machine learning tutorial repository which I use for educational purpose
 
 Tutorials followed for learning is : [Machine Learning Recipes with Josh Gordon](https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal)
 
