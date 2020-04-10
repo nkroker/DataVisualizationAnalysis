@@ -529,7 +529,7 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+![png](IrisDataVisualization_files/IrisDataVisualization_16_0.png)
 
 
 
@@ -539,7 +539,7 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![png](IrisDataVisualization_files/IrisDataVisualization_17_0.png)
 
 
 
@@ -557,7 +557,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](IrisDataVisualization_files/IrisDataVisualization_18_0.png)
 
 
 
@@ -567,7 +567,7 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+![png](IrisDataVisualization_files/IrisDataVisualization_19_0.png)
 
 
 
@@ -577,7 +577,7 @@ plt.show()
 ```
 
 
-![png](output_20_0.png)
+![png](IrisDataVisualization_files/IrisDataVisualization_20_0.png)
 
 
 
